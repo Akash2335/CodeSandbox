@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #002542;
+      }
+      div {
+        background-color: #c07eff;
+        border: solid 2px #ffe187;
+        padding: 5px;
+      }
+
+      :is(input, label, button) {
+        position: relative;
+        left: 30px;
+        color: #1aad77;
+        box-shadow: 2px 2px 1px 1px #1aad77;
+      }
+      form {
+        box-shadow: 10px 10px 1px 10px #b9ff6a;
+      }
+      button {
+        width: 100px;
+        border-radius: 50px;
+        background-color: #1aad77;
+        color: #002542;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Input Handling</h1>
+      <form action="post">
+        <div>
+          <label for="UserName">UserName</label>
+          <input type="text" placeholder="User@Name" required />
+        </div>
+        <div>
+          <label for="firstname">First Name</label>
+          <input type="text" name="" placeholder="First Name" id="" required />
+        </div>
+        <div>
+          <label for="last">Last NAme</label>
+          <input type="text" name="" placeholder="Last Name" id="" required />
+        </div>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </body>
+</html>

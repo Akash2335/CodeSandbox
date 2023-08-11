@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      :is(input[type="text"], input[type="number"]) {
+        color: olive;
+        border-color: rgb(0, 255, 0);
+        border-radius: 10px;
+        width: 200px;
+        height: 20px;
+        text-align: center;
+        caret-color: rgb(0, 255, 0);
+        cursor: pointer;
+      }
+      :is(input[type="password"]) {
+        color: red;
+        caret-color: green;
+      }
+      :is(input[type="radio"]) {
+        accent-color: green;
+        cursor: pointer;
+      }
+      input[type="range"] {
+        accent-color: #3e158f;
+        cursor: pointer;
+      }
+      progress{
+        accent-color:#3e158f;
+        width: 200px;
+        height: 50px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>We can change input box color</h1>
+    <h3>The accent-color Property</h3>
+    <ol>
+      <li>
+        <span>Text: </span> <input type="text" placeholder="Type=> text" />
+      </li>
+      <li><span>Number: </span><input type="number" placeholder="Number" /></li>
+      <li><span>Password: </span><input type="password" /></li>
+      <li>
+        <span>gender m<input type="radio" name="g"  value="M"/></span>
+        <span>gender m<input type="radio" name="g"  value="F"/></span>
+      </li>
+      <li><span>Range: </span> <input type="range" min="10" max="100" /></li>
+      <li><span>Progress :</span><progress  max='100'></li>
+    </ol>
+  </body>
+</html>
